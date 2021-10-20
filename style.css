@@ -1,0 +1,218 @@
+* { 
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: 'Merriweather', serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 360px;
+    background-color: rgb(228, 226, 225);
+}
+
+header {
+    display: block;
+}
+
+.intro {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 20px 0px 20px;
+}
+
+h1 {
+    background-color: black;
+    color: white;
+    margin: 0px;
+    padding: 30px;
+    text-align: center;
+    font-size: 1.25em;
+    margin-bottom: 30px;
+}
+
+.signuptitle {
+    margin: 0px;
+    font-size: 1.25em;
+}
+
+.signupparagraph {
+    margin:10px 0px 40px 0px;
+    color: rgb(167, 166, 166);
+}
+.firstline {
+    border: solid 2px;
+    margin: 3px 0;
+}
+
+.secondline {
+    border: solid 1px;
+    margin: 0px;
+    
+}
+
+h2.titles {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.firstfield {
+    margin-top: 30px;
+    
+}
+
+.firstfield, .secondfield {
+    border: none;
+    padding: 0px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0;
+}
+
+label {
+    padding: 0.5rem 0;
+}
+
+input, select {
+    height: 50px;
+    background-color: rgb(241, 241, 241);
+    border: none;
+    border-radius: 5px
+}
+
+select {
+    color:rgb(196, 194, 194);
+}
+
+option {
+    color: black;
+}
+
+::placeholder {
+    text-align:right;
+    font-style: italic;
+    color: rgb(196, 194, 194);
+    margin-left: 20px;
+    }
+
+#zip {
+    width: 50%;
+}
+
+.thirdline {
+    border: solid 1px;
+    margin: 40px 0px 30px 0px;
+}
+
+.secondfield{
+    display: flex;
+    flex-direction: column;
+}
+
+.newsparagraph, .othertopics {
+    font-size: 0.9em;
+}
+.checkbox, .radio {
+    display: flex;
+}
+
+.newslabel {
+    align-self: center;
+    margin-left: 10px;
+}
+
+.newsparagraph {
+    line-height: 1.75em;
+    margin: 0px;
+}
+
+#html, #css, #javascript, #markup, #plain {
+    height: 30px;
+}
+
+.newsletterformat {
+    margin: 15px 0px 5px 0px;
+}
+
+.othertopics {
+    padding-top: 15px;
+    margin: 15px 0px 10px 0px;
+}
+
+.textarea {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    height: 100px;
+    background-color: rgb(241, 241, 241);
+    border: none;
+    border-radius: 5px
+}
+
+button {
+    height: 60px;
+    margin-top: 30px;
+    background-color:rgb(59, 194, 176);
+    color: white;
+    font-family: Merriweather;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.9em;
+    color: rgb(167, 166, 166);
+}
+
+input:focus, textarea:focus {
+    background-color:rgb(237, 243, 158);
+    transition: background-color 2s ease;
+}
+
+
+@media screen and (min-width: 768px) {
+    body {
+        width: 768px;
+    }
+
+    .form-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #name, #email, #phone, #street, #city {
+        width: 100%;
+    }
+
+    #zip {
+        width: 30%;
+    }
+
+    select {
+        width: 100%;
+    }
+
+    .othertopics {
+        max-height: 50px;
+        margin-bottom: 0px;
+    }
+
+    label {
+        flex-basis: 9rem;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+}
