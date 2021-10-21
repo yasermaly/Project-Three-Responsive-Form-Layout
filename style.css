@@ -56,7 +56,7 @@ h1 {
     
 }
 
-h2.titles {
+legend.titles {
     font-size: 1.2em;
     font-weight: bold;
 }
@@ -177,7 +177,7 @@ button {
     color: rgb(167, 166, 166);
 }
 
-input:focus, textarea:focus {
+input:focus, textarea:focus, select:focus {
     background-color:rgb(237, 243, 158);
     transition: background-color 2s ease;
 }
@@ -198,7 +198,7 @@ input:focus, textarea:focus {
     }
 
     #zip {
-        width: 30%;
+        width: 25%;
     }
 
     select {
